@@ -45,3 +45,27 @@ button.button {
 .sectionLabel {
   @apply mb-2 text-xl text-gray-400 font-thin border-b border-b-gray-600;
 }
+
+.table {
+  @apply border border-gray-600 rounded;
+}
+
+.tableRow {
+  @apply flex border-b border-b-gray-600;
+}
+
+.tableRow:last-child {
+  @apply border-none;
+}
+
+.tableCol {
+  @apply px-2 py-1 flex-1 flex justify-between border-r border-r-gray-600 font-bold;
+}
+
+.tableCol:last-child {
+  @apply border-none font-normal;
+}
+
+.tableCol span:last-child {
+  @apply text-gray-600;
+}

@@ -66,6 +66,7 @@ export function calculateYAN({
     sugarGramsPerLiter,
     targetYAN,
     liters,
+    fermaidOOnly,
     fermaidO,
     fermaidK,
     dap,
