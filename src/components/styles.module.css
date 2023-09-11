@@ -1,0 +1,47 @@
+.inputField {
+  @apply border border-gray-600 rounded px-2 py-1 w-full bg-transparent focus:outline h-8;
+  transition: outline 200ms ease-in-out;
+}
+
+button.button {
+  @apply bg-sky-600 text-white px-3 py-1 rounded transition-colors hover:bg-sky-800;
+}
+
+.calculatorColumn {
+  @apply border border-gray-600 px-4 py-8 rounded max-md:min-w-full w-[500px] h-fit;
+}
+
+.link {
+  @apply text-sky-600 underline cursor-pointer hover:text-sky-800 transition-colors;
+}
+
+.switch {
+  @apply relative inline-block w-11 h-6;
+}
+
+.switch input {
+  @apply sr-only;
+}
+
+.slider {
+  @apply absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-gray-600 rounded-full transition-all;
+}
+
+.slider::before {
+  @apply absolute h-5 w-5 rounded-full bg-white transition-all;
+  content: '';
+  top: 2px;
+  left: 2px;
+}
+
+.switch input:checked + .slider {
+  @apply bg-sky-600;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+.sectionLabel {
+  @apply mb-2 text-xl text-gray-400 font-thin border-b border-b-gray-600;
+}
