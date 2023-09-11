@@ -10,24 +10,24 @@ const NutrientTable = ({ label, nutrient }) => (
     <div className={styles.sectionLabel}>{label}</div>
     <div className={styles.table}>
       <div className={styles.tableRow}>
-        <div className={styles.tableCol}>Total Weight</div>
+        <div className={styles.tableCol}>Total</div>
         <div className={styles.tableCol}>
           <span>{nutrient.totalGrams.toFixed(3)}</span>
           <span>g</span>
         </div>
       </div>
       <div className={styles.tableRow}>
-        <div className={styles.tableCol}>Teaspoon Estimate</div>
-        <div className={styles.tableCol}>
-          <span>{nutrient.totalTsps.toFixed(3)}</span>
-          <span>tsp</span>
-        </div>
-      </div>
-      <div className={styles.tableRow}>
-        <div className={styles.tableCol}>Per Liter</div>
+        <div className={styles.tableCol}></div>
         <div className={styles.tableCol}>
           <span>{nutrient.gramsPerLiter.toFixed(3)}</span>
           <span>g/L</span>
+        </div>
+      </div>
+      <div className={styles.tableRow}>
+        <div className={styles.tableCol}></div>
+        <div className={styles.tableCol}>
+          <span>{nutrient.totalTsps.toFixed(3)} (estimated)</span>
+          <span>tsp</span>
         </div>
       </div>
       <div className={styles.tableRow}>
