@@ -1,5 +1,5 @@
 .inputField {
-  @apply border border-gray-600 rounded px-2 py-1 w-full bg-transparent focus:outline h-8;
+  @apply border border-gray-600 rounded px-2 py-1 w-full bg-gray-950 focus:outline h-8;
   transition: outline 200ms ease-in-out;
 }
 
