@@ -61,7 +61,7 @@ export const InfoTooltip = ({ className, children, useMaxWidth = true }) => {
       <InfoIcon
         ref={refs.setReference}
         {...getReferenceProps()}
-        className="w-5 h-5 cursor-pointer hover:opacity-50 transition-opacity"
+        className="w-6 h-6 cursor-pointer hover:opacity-50 transition-opacity"
       />
       <FloatingPortal>
         {isMounted && (
