@@ -59,13 +59,9 @@ button.button {
 }
 
 .tableCol {
-  @apply px-2 py-1 flex-1 flex justify-between border-r border-r-gray-600 font-bold;
+  @apply px-2 py-1 flex-1 flex items-center justify-between gap-1 border-r border-r-gray-600 font-bold;
 }
 
 .tableCol:last-child {
   @apply border-none font-normal;
-}
-
-.tableCol span:last-child {
-  @apply text-gray-600;
 }

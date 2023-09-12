@@ -31,8 +31,8 @@ export function calculateYAN({
   const nutritionMultiplier = NUTRITION_MULTIPLIERS[nutritionRequirement];
   const targetYAN = sugarGramsPerLiter * nutritionMultiplier - offsetPPM;
 
-  const isGallon = volumeUnit.toUpperCase().includes('GALLON');
-  const liters = isGallon ? volume * US_GALLONS_TO_LITERS : volume;
+  const isUnitGallon = volumeUnit.toUpperCase().includes('GALLON');
+  const liters = isUnitGallon ? volume * US_GALLONS_TO_LITERS : volume;
 
   // Fermaid O
   const fermaidO = getNutrientAdditions(
@@ -62,6 +62,21 @@ export function calculateYAN({
   const remainderNitrogen = targetYAN - totalNitrogen;
 
   return {
+    input: {
+      specificGravity,
+      nutritionRequirement,
+      offsetPPM,
+      volume,
+      volumeUnit,
+      fermaidOOnly,
+      fermaidOMultiplier,
+      fermaidOMaxGramsPerLiter,
+      fermaidOPPMPerGram,
+      fermaidKMaxGramsPerLiter,
+      fermaidKPPMPerGram,
+      dapMaxGramsPerLiter,
+      dapPPMPerGram,
+    },
     brix,
     sugarGramsPerLiter,
     targetYAN,
