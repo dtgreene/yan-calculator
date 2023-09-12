@@ -23,7 +23,7 @@ export const App = () => {
           target="_blank"
           href="https://docs.google.com/spreadsheets/d/1W8Pp52vFx9g-Uk7aq4WK66Kg_TI5nTrI32sBc5fGaPU/edit#gid=0"
         >
-          Original Google sheet
+          Original by Reddit user /u/balathustrius
         </a>
       </div>
       <div className="flex justify-center gap-4 flex-wrap">

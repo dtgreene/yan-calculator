@@ -132,16 +132,12 @@ export const Results = ({ results }) => {
         label="Fermaid O"
         nutrient={results.fermaidO}
         initialTooltipContent={
-          <>
-            <div>
-              const maxOverride = fermaidOOnly ? Infinity :
-              fermaidOMaxGramsPerLiter;
-            </div>
-            <div>
-              const gramsPerLiter = Math.min(targetYAN / ppmPerGram,
-              maxOverride);
-            </div>
-          </>
+          <div>
+            const gramsPerLiter ={' '}
+            {results.fermaidOOnly
+              ? 'targetYAN / ppmPerGram'
+              : 'Math.min(targetYAN / ppmPerGram, maxGramsPerLiter);'}
+          </div>
         }
       />
       {!results.fermaidOOnly && (
