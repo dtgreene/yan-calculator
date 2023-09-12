@@ -6,7 +6,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "build:github": "node ./scripts/buildGHPages.js",
+    "build:github": "vite build --base=https://dtgreene.github.io/yan-calculator/dist/",
     "preview": "vite preview"
   },
   "dependencies": {
