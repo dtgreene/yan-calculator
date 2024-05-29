@@ -245,12 +245,11 @@ function getDownloadInfo(results) {
 
   // Add file name
   const date = new Date();
-  const year = date.getFullYear();
-  const month = date.getMonth();
-  const day = date.getDay();
+  const stringDate = date.toISOString();
+  const downloadName = `yan-${stringDate.split('T')[0]}.txt`;
 
   return {
-    downloadName: `yan-${year}-${month}-${day}.txt`,
+    downloadName,
     downloadURL: URL.createObjectURL(file),
   };
 }
